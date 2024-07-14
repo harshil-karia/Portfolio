@@ -32,6 +32,7 @@ var typed = new Typed(".typing-skills",{
 })
 
 /* ============================ Aside ============================== */
+
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
     totalNavList = navList.length,
@@ -48,7 +49,6 @@ const nav = document.querySelector(".nav"),
                 if(navList[j].querySelector("a").classList.contains("active"))
                 {
                     addBackSection(j);
-                    //allSection[j].classList.add("back-section");
                 }
                 navList[j].querySelector("a").classList.remove("active");
             }
@@ -119,7 +119,7 @@ const nav = document.querySelector(".nav"),
         }
         document.getElementById('downloadButton').addEventListener('click', function() {
             var link = document.createElement('a');
-            link.href = 'D:/Portfolio/harshil_resume.pdf'; // Path to your file
+            link.href = 'https://github.com/harshil-karia/portfolio/raw/main/harshil_resume.pdf'; // Path to your file
             link.download = 'harshil_resume.pdf'; // Desired file name
             link.target = '_blank'
             document.body.appendChild(link);
